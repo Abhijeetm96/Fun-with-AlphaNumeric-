@@ -1,0 +1,580 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    </head>
+    <body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+         <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>    
+              </button>
+            <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-file" area-hidden="true"></span> Working With Number&Text</a>
+         </div>
+         
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <div class="nav navbar-nav">
+                <li><a href="#ber"><span class="glyphicon glyphicon-sound-5-1"></span> Working With Number</a></li>
+                <li><a href="#text"><span class="glyphicon glyphicon-font"></span> Working With Text</a></li>
+             </div>
+             <ul class="nav navbar-nav navbar-right">
+             <li><a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-book"></span> About</a></li>
+                <li><a href="#footer"><span class="glyphicon glyphicon-earphone"></span> Contact Us</a></li>
+               <li><a href="https://github.com/Abhijeetm96"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+                <li><a href="mailto:abhijeetm96kumar@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Email Us</a></li>
+             </ul>
+            </div>
+        </div>
+    </nav>
+   <div class="head">
+    <div id="ber"><h2 align="center"><u><b><span class="glyphicon glyphicon-sound-5-1"></span> Working With Number!</b></u></h2></div>
+    <div class="body" id="factor">
+     <h1 align="center">Factorize</h1>
+       <h4 align="center">
+            <input type="number" id="num" placeholder="Enter A Value" required/>
+ <button type="submit" class="submit" onclick="makerFactor()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+</h4>
+   <div id="demo">The answer goes here!
+                </div>
+                </div>
+                 <div class="body" id="pn">
+     <h1 align="center">Prime Number Checker</h1>
+       <h4 align="center">
+            <input type="number" id="prime" placeholder="Enter A Value" required/>
+ <button type="submit" class="submit" onclick="makerPrime()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+</h4>
+   <div id="demo1">The answer goes here!
+                </div>
+                </div>  
+               <div class="body" align="center" id="time">
+               <h1>Time Converter</h1>
+            Day : <input type="number" id="day" placeholder="Enter A Value"/><br />Hour : <input type="number" id="hour" placeholder="Enter A Value"/><br />Minute : <input type="number" id="min" placeholder="Enter A Value"/><br />Second : <input type="number" id="sec" placeholder="Enter A Value"/><br />
+            Convert To :  <SELECT id="to"> 
+<option value="1" selected> Day </option>
+<option value="2"> Hour</option>
+<option value="3"> Minute</option>
+<option value="4">Second</option>
+</select>  <br />
+            <button type="submit" id="submit" class="submit" onclick="makerConverterTime()"><span class="glyphicon glyphicon-ok"></span> Submit</button>    <a type="button" data-toggle="modal" data-target="#myModal">See Term Of Time?</a>
+        <div id="demo3">The answer goes here!</div>
+               <div id="demo4">The answer goes here!</div>
+                      <div id="demo5">The answer goes here!</div>
+                             <div id="demo6">The answer goes here!</div>
+         </div>
+          <div class="body" id="defi">
+     <h1 align="center">Deficient number</h1>
+       <h4 align="center">
+            <input type="number" id="deficient" placeholder="Enter A Value" required/>
+ <button  type="submit" class="submit" onclick="makerDeficient()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+</h4>
+   <div id="demo2">The answer goes here!
+                </div><br/>
+                </div>
+                 <div class="body" id="abun">
+     <h1 align="center">Abundant number</h1>
+       <h4 align="center">
+            <input type="number" id="Abundant" placeholder="Enter A Value" required/>
+ <button  type="submit" class="submit" onclick="makerAbundant()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+</h4>
+   <div id="demo8">The answer goes here!
+                </div><br/>
+                </div>
+                 <div class="body">
+     <h1 align="center">Perfect Number</h1>
+       <h4 align="center">
+            <input type="number" id="perfect" placeholder="Enter A Value" required/>
+ <button  type="submit" class="submit" onclick="makerPerfect()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+</h4>
+   <div id="demo16">The answer goes here!
+                </div><br/>
+                </div>
+                  <div class="body" id="auto">
+              <h1 align="center">Automorphic number</h1>
+         <h2 align="center">Checker</h2> 
+       <h4 align="center">
+            <input type="number" id="autocheck" placeholder="Enter A Value" required/>
+ <button  type="submit" class="submit" onclick="makerAutoCheck()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+</h4>
+   <div id="demo11">The answer goes here!
+                </div><br/>
+                         <div id="body">
+          <h2 align="center">In Range</h2>
+       <h4 align="center">
+            From : <input type="number" id="autofrom" placeholder="Enter A Value" required/> <br/>To : 
+            <input type="number" id="autoto" placeholder="Enter A Value" required/><br/>
+ <button  type="submit" class="submit" onclick="makerAutoRange()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+</h4>
+   <div id="demo12">The answer goes here!
+                </div><br/>
+                </div>
+                </div>
+                <div class="body" id="ip">
+     <h1 align="center">Is That An IP Address???</h1>
+       <h4 align="center">
+            <input type="number" id="ipone" placeholder="Enter A Value"  required/> •
+            <input type="number" id="iptwo" placeholder="Enter A Value" required/> •
+            <input type="number" id="ipthree" placeholder="Enter A Value" required/> •
+             <input type="number" id="ipfour" placeholder="Enter A Value" required/>
+ <button  type="submit" class="submit" onclick="makerIP()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+</h4>
+   <div id="demo15">The answer goes here!
+                </div></div>
+                 <div class="body">
+     <h1 align="center">A Snail's Journey</h1>
+       <h4 align="center">Tree's height : 
+            <input type="number" id="snailh" placeholder="Enter A Value" required/><br />Ascending per day : 
+                <input type="number" id="snaila" placeholder="Enter A Value" required/><br/>Descending per day : 
+                  <input type="number" id="snailb" placeholder="Enter A Value" required/>  <br />
+ <button  type="submit" class="submit" onclick="makerSnail()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+</h4>
+   <div id="demo17">The answer goes here!
+                </div><br/>
+                </div>
+              <div class="body" id="pro">
+                <h1 align="center">Pronic Number</h4>
+       <h4 align="center">
+            <input style="display:none;"type="number" id="pronic" placeholder="Enter A Value" required/>
+ <button style="display:none;"type="submit" class="submit" onclick="makerPronic()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+</h4>
+   <div id="demo7">In Develop. Coming soon!!!
+                </div>
+                </div>
+                <div class="container">
+      <div id="myModal" class="modal" style="vertical-align:middle;">
+        <div class="model-dialog">
+          <div class="modal-content">
+              <button data-dismiss="modal" class="submit" align="right">X</button>
+            <div class="modal-header" align="center"><b>Term Of Time</b></div>
+            <div class="modal-content" align="center">1 year = 12 months,365 days</br>1 month = 30 days<br/>1 days = 24 hours<br/>1 hour = 60 minutes<br/>1 minute = 60 seconds</div>
+            <div class="modal-footer" id="copyright"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+      <div class="container">
+      <div id="myModal2" class="modal">
+        <div class="model-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+             <button data-dismiss="modal" class="submit">X</button>
+              <h3 class="modal-title" style="text-align:center;">About Me!!!</h3>
+            </div>
+            <div class="modal-body">Hello My name is <b>Abhijeet Kumar</b>. I have completed my bachelors in information Science and Engineering . I am a web developer with expertise in Web technologies  </div>
+            <div class="modal-footer" style="text-align:center;"><a href="https://github.com/Abhijeetm96"><span class="glyphicon glyphicon-user"></span> See My Profile?</a><br /><h4 id="copyright"></h4></div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div id="text"><h2 align="center"><u><b><span class="glyphicon glyphicon-font"></span> Working With Text!</b></u></h2></div>
+        <div class="body" id="body">
+     <h1 align="center">Removing Space</h1>
+       <h4 align="center">
+            <input type="text" id="remove" placeholder="Enter A Text" required/>
+ <button  type="submit" class="submit" onclick="makerRemoveSpace()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+</h4>
+   <div id="demo9">The answer goes here!
+                </div><br/>
+                </div>
+                  <div class="body" id="body">
+                 <h1 align="center">Sort A String</h1>
+       <h4 align="center">
+            <input type="text" id="sort" placeholder="Enter A Text" required/>
+ <button  type="submit" class="submit" onclick="makerSort()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+</h4>
+   <div id="demo10">The answer goes here!
+                </div><br />
+                </div>
+    </div>
+                <h4 align="center" id="copy"></h4>
+                <footer id="footer" align="center"><h3>Contact Us</h3><br /><div ><a href="https://github.com/Abhijeetm96"><button id="profile"><span class="glyphicon glyphicon-user"></span> My Profile</button></a></div><br /><div><a href="mailto:prem.warith.vatanaplachaigoon@gmail.com"><button id="email"><span class="glyphicon glyphicon-envelope"></span> Email Us</button></a></div></footer>
+                <script>
+               var d = new Date();
+    var year = d.getFullYear(); document.getElementById("copy").innerHTML="<b>"+year+" &copy; Abhijeet Kumar</b>";
+                document.getElementById("copyright").innerHTML="<b>"+year+" &copy; Abhijeet Kumar</b>";
+                alert("*****NOTICE*****\nPlease note: If you enter too high number. You have to wait for a result. It may take a few minute.");
+                alert("If it has any problem.\nPlease write using the contact options");
+                function makerFactor() {
+var  n=document.getElementById("num").value; 
+var  num=Math.floor(n*1);
+var x=1;
+       var y=2;
+           var factor = [1];
+           if (num==1) {
+               document.getElementById("demo").innerHTML="The factor of 1 are 1.";
+           }
+     while (num>y) {
+    var floor=Math.floor(num/y);
+     var ceil=Math.ceil(num/y); 
+         if (floor==ceil) {
+             factor[x] = y;
+             x++;
+             y++;
+         } else if (floor!=ceil) {
+             y++;
+         }
+  }      
+  if (y==num) {
+  factor[x] = num;
+  var fact = factor;
+      document.getElementById("demo").innerHTML="The factor of "+num+" are "+fact+".";
+  }
+  }
+  function makerPronic() {
+      var  n=document.getElementById("pronic").value; 
+      var num=Math.floor(n*1);
+var x=1;
+       var y=2;
+           var factor = [1];
+     while (num>y) {
+    var floor=Math.floor(num/y);
+     var ceil=Math.ceil(num/y); 
+         if (floor==ceil) {
+             factor[x] = y;
+             x++;
+             y++;
+         } else if (floor!=ceil) {
+             y++;
+         }
+         
+  }      
+  if (y==num) {
+factor[x] = num;
+var a=Math.floor((factor.length/2)-1);
+var b=Math.floor(factor.length);
+var c=factor[a];
+var d=factor[b];
+var e=Math.floor(d-c);
+  if (e==1) {
+      document.getElementById("demo7").innerHTML=num+" is a pronic number! ("+c+"×"+d+").";
+      } else {
+          document.getElementById("demo7").innerHTML=num+" is not a pronic number!";
+      }
+  } else {
+      document.getElementById("demo7").innerHTML=num+" is not a pronic number!";
+  }
+  }
+  function alt() {
+      alert("In develop.");
+  }
+  function makerDeficient() {
+      var  n=document.getElementById("deficient").value;
+      var num=Math.floor(n*1);
+var x=1;
+       var y=2;
+           var factor = [1];
+     while (num>y) {
+    var floor=Math.floor(num/y);
+     var ceil=Math.ceil(num/y); 
+         if (floor==ceil) {
+             factor[x] = y;
+             x++;
+             y++;
+         } else if (floor!=ceil) {
+             y++;
+         }
+  }  
+if (y==num) {
+  var fact = factor;
+  }  
+var sum = 0;
+for(a=0;a<factor.length;a++)
+{
+    sum += factor[a];
+}
+  if (sum<num) {
+      document.getElementById("demo2").innerHTML=num+" Is a deficient number!</br>The factor of "+num+" are "+fact+".<br/>The sum is "+sum+".<br/>"+sum+" < "+num;
+      } else if (num==1) {
+      document.getElementById("demo2").innerHTML="1 Isn't a deficient number! (Perfect)</br>The factor of 1 are 1.<br/>The sum is 1.<br/>1 < 1";
+  } else if (sum==num){
+      document.getElementById("demo2").innerHTML=num+" Isn't a deficient number! (Perfect)</br>The factor of "+num+" are "+fact+".<br/>The sum is "+sum+".<br/>"+sum+" = "+num;
+  } else {
+      document.getElementById("demo2").innerHTML=num+" Isn't a deficient number! (Abundant)</br>The factor of "+num+" are "+fact+".<br/>The sum is "+sum+".<br/>"+sum+" > "+num;
+  }
+  }
+  function makerPrime() {
+      var  n=document.getElementById("prime").value; 
+      var  num=Math.floor(n*1);
+       var x=1;
+       var y=2;
+           var factor = [1];
+     while (num>y) {
+    var floor=Math.floor(num/y);
+     var ceil=Math.ceil(num/y); 
+         if (floor==ceil) {
+             factor[x] = y;
+             x++;
+             y++;
+         } else if (floor!=ceil) {
+             y++;
+         }
+  }      
+  if (y==num) {
+  factor[x] = num;
+  }
+  var lens=factor.length;
+if (lens==2) {
+    document.getElementById("demo1").innerHTML=num+" Is a prime number!";
+} else {
+    document.getElementById("demo1").innerHTML=num+" Isn't a prime number!";
+}
+  }
+  function makerConverterTime() {
+            var  d=document.getElementById("day").value; 
+            var  h=document.getElementById("hour").value; 
+            var  m=document.getElementById("min").value; 
+            var  s=document.getElementById("sec").value; 
+            var day=Math.floor(d*1);
+            var hour=Math.floor(h*1);
+            var min=Math.floor(m*1);
+            var sec=Math.floor(s*1);
+            var  to=document.getElementById("to").value;
+            var  hours=Math.floor(day*24);
+            var hourss=Math.floor(hours+hour);
+            var mins=Math.floor(hourss*60);
+            var minss=Math.floor(mins+min);
+            var secs=Math.floor(minss*60);
+            var tosec=Math.floor(secs+sec);
+            var now = Math.floor(sec+(min*60)+(hour*60*60)+(day*24*60*60))
+            var second=Math.floor(tosec%60);
+        var tomin=Math.floor(tosec/60);
+        var minute=Math.floor(tomin%60);
+        var tohour=Math.floor(tomin/60);
+        var hr=Math.floor(tohour%24);
+        var date=Math.floor(tohour/24);
+        if (to==4) {
+        document.getElementById("demo3").innerHTML="<b>Day : </b>0";         
+ document.getElementById("demo4").innerHTML="<b>Hour : </b>0";          document.getElementById("demo5").innerHTML="<b>Minute : </b>0";          document.getElementById("demo6").innerHTML="<b>Second : </b>"+tosec;
+        } else if (to==3) {
+        document.getElementById("demo3").innerHTML="<b>Day : </b>0";         
+ document.getElementById("demo4").innerHTML="<b>Hour : </b>0";          document.getElementById("demo5").innerHTML="<b>Minute : </b>"+tomin;          document.getElementById("demo6").innerHTML="<b>Second : </b>"+second;
+        } else if (to==2) {
+           document.getElementById("demo3").innerHTML="<b>Day : </b>0";         
+ document.getElementById("demo4").innerHTML="<b>Hour : </b>"+tohour;          document.getElementById("demo5").innerHTML="<b>Minute : </b>"+minute;       document.getElementById("demo6").innerHTML="<b>Second : </b>"+second;
+        } else if (to==1) {
+        document.getElementById("demo3").innerHTML="<b>Day : </b>"+date;         
+ document.getElementById("demo4").innerHTML="<b>Hour : </b>"+hr;          document.getElementById("demo5").innerHTML="<b>Minute : </b>"+minute;          document.getElementById("demo6").innerHTML="<b>Second : </b>"+second;
+              } 
+
+             }
+             function makerAbundant() {
+      var  n=document.getElementById("Abundant").value;
+      var num=Math.floor(n*1);
+var x=1;
+       var y=2;
+           var factor = [1];
+     while (num>y) {
+    var floor=Math.floor(num/y);
+     var ceil=Math.ceil(num/y); 
+         if (floor==ceil) {
+             factor[x] = y;
+             x++;
+             y++;
+         } else if (floor!=ceil) {
+             y++;
+         }
+  }  
+if (y==num) {
+  var fact = factor;
+  }  
+var sum = 0;
+for(a=0;a<factor.length;a++)
+{
+    sum += factor[a];
+}
+  if (sum<num) {
+      document.getElementById("demo8").innerHTML=num+" Isn't a Abundant number! (Deficient)</br>The factor of "+num+" are "+fact+".<br/>The sum is "+sum+".<br/>"+sum+" < "+num;
+      } else if (num==1) {
+      document.getElementById("demo8").innerHTML="1 Isn't a Abundant number! (Perfect)</br>The factor of 1 are 1.<br/>The sum is 1.<br/>1 = 1";
+  } else if (sum==num){
+      document.getElementById("demo8").innerHTML=num+" Isn't a Abundant number! (Perfect)</br>The factor of "+num+" are "+fact+".<br/>The sum is "+sum+".<br/>"+sum+" = "+num;
+  } else {
+      document.getElementById("demo8").innerHTML=num+" Is a Abundant number!</br>The factor of "+num+" are "+fact+".<br/>The sum is "+sum+".<br/>"+sum+" > "+num;
+  }
+  }
+  function makerRemoveSpace() {
+    var str = document.getElementById("remove").value;
+    var res = str.split(" ").join("");
+    document.getElementById("demo9").innerHTML = res;
+}  
+function makerSort() {
+    var str = document.getElementById("sort").value;
+    var res = str.split("").sort().join("");
+    document.getElementById("demo10").innerHTML = res;
+}  
+function makerAutoCheck() {
+        var num = document.getElementById("autocheck").value;
+        var number = Math.pow(num,2);
+        var mun = num.split("").reverse();
+        var ber = (""+number).split("").reverse();
+        var bet = mun.length;
+        var arr = [];
+        for (i=0; i<bet; i++) {
+            arr[i] = ber[i];
+        }
+        var m = arr.join('');
+        var n = mun.join('');
+        if (m==n) {
+            document.getElementById("demo11").innerHTML=num+" Is An Automorphic Number!";
+        } else {
+            document.getElementById("demo11").innerHTML=num+" Isn't An Automorphic Number!";
+        }
+        }
+        function makerAutoRange() {
+var fro = document.getElementById("autofrom").value; 
+var to = document.getElementById("autoto").value;
+var f = Math.floor(fro*1);
+var t = Math.floor(to*1);
+if (f>t) {
+    document.getElementById("demo12").innerHTML="Your Input Number Are Not Valid!";
+}
+var ran = [];
+for (x=0; fro<to; fro++){
+    var number = Math.pow(fro,2);
+        var mun = (""+fro).split("").reverse();
+        var ber = (""+number).split("").reverse();
+        var bet = mun.length;
+        var arr = [];
+        for (i=0; i<bet; i++) {
+            arr[i] = ber[i];
+        }
+        var m = arr.join('');
+        var n = mun.join('');
+        if (m==n) {
+            ran[x]= fro;
+            x++
+        } 
+}
+var nu = ran.length;
+var n = Math.floor(nu*1);
+if (fro==to) {
+if (n==0) {
+    document.getElementById("demo1").innerHTML="No Automorphic Number In This Range!";
+} else {
+    document.getElementById("demo12").innerHTML=ran;
+}
+}
+        }
+        function makerIP() {
+        var on = document.getElementById("ipone").value;
+        var tw = document.getElementById("iptwo").value;
+        var thre = document.getElementById("ipthree").value;
+        var fou = document.getElementById("ipfour").value;
+        var one = Math.floor(on*1);
+        var two = Math.floor(tw*1);
+        var three = Math.floor(thre*1);
+        var four = Math.floor(fou*1);
+        var o = on.split("");
+        var t = tw.split("");
+        var thr = thre.split("");
+        var fo = fou.split("");
+        var e = o.length;
+        var w = t.length;
+        var th = thr.length;
+        var f = fo.length;
+        var ans = "";
+        var check = ["Is an IP Address!","Is't an IP Address!"];
+        var cause = ["- Contain number that greater than 255.<br/>","- Contain negative number.<br/>","- Contain an alphabat or unexpected cheracter.<br/>","- Leading with zero.<br/>","- Some octet(s) are blank."];
+        if (one>255 || two>255 || three>255 || four>255) {
+            ans = ans+cause[0];
+        }
+        if (one<0 || two<0 || three<0 || four<0) {
+            ans = ans+cause[1];
+        }
+        if (one!=on || two!=tw || three!=thre || four!=fou) {
+            ans = ans+cause[2];
+        }
+        if (o[0]==0 && e>1) {
+            ans = ans+cause[3];
+        } else if (t[0]==0 && w>1) {
+            ans = ans+cause[3];
+        } else if (thr[0]==0 && th>1) {
+            ans = ans+cause[3];
+        } else if (fo[0]==0 && f>1) {
+            ans = ans+cause[3];
+        }
+        if (e==0 || w==0 || th==0 || f==0) {
+            ans = ans+cause[4];
+        }
+        var an = ans.length;
+        if (an==0) {
+            document.getElementById("demo15").innerHTML=on+"."+tw+"."+thre+"."+fou+" Is a valid IP Address!";
+        } else if (an!=0) {
+            document.getElementById("demo15").innerHTML=on+"."+tw+"."+thre+"."+fou+" Isn't a valid IP Address!<br/>"+ans;
+        }
+    }
+function makerSnail() {
+      var HH = document.getElementById("snailh").value;
+        var AA = document.getElementById("snaila").value;
+        var BB = document.getElementById("snailb").value;
+        var H = Math.floor(HH*1);
+        var A = Math.floor(AA*1);
+        var B = Math.floor(BB*1);
+        if (A>B) {
+        var height = 0;
+        var day = 0;
+        while (height<H) {
+            height+=A;
+            day+=1;
+             if (height>=H) {
+                 if (day==1) {
+           document.getElementById("demo17").innerHTML="A snail will reach the top in "+day+" day.";
+        } else if (day>1) {
+            document.getElementById("demo17").innerHTML="A snail will reach the top in "+day+" days.";
+        } 
+            } else if (height<H) {
+                height-=B;
+            }
+        }
+  } else {
+      document.getElementById("demo17").innerHTML="Your input are <b style='color:red;'>Incorrect</b>.";
+  }
+  }
+  function makerPerfect() {
+      var  n=document.getElementById("perfect").value;
+      var num=Math.floor(n*1);
+      if (num==1) {
+      document.getElementById("demo16").innerHTML="1 Is a perfect number!</br>The factor of 1 are 1.<br/>The sum is 1.<br/>1 = 1";
+  } else {
+var x=1;
+       var y=2;
+           var factor = [1];
+     while (num>y) {
+    var floor=Math.floor(num/y);
+     var ceil=Math.ceil(num/y); 
+         if (floor==ceil) {
+             factor[x] = y;
+             x++;
+             y++;
+         } else if (floor!=ceil) {
+             y++;
+         }
+  }  
+if (y==num) {
+  var fact = factor;
+  }  
+var sum = 0;
+for(a=0;a<factor.length;a++)
+{
+    sum += factor[a];
+}
+  if (sum==num) {
+      document.getElementById("demo16").innerHTML=num+" Is a perfect number!</br>The factor of "+num+" are "+fact+".<br/>The sum is "+sum+".<br/>"+sum+" = "+num;
+      } else if (sum<num){
+      document.getElementById("demo16").innerHTML=num+" Isn't a perfect number! (Deficient)</br>The factor of "+num+" are "+fact+".<br/>The sum is "+sum+".<br/>"+sum+" < "+num;
+  } else {
+      document.getElementById("demo16").innerHTML=num+" Isn't a perfect number! (Abundant)</br>The factor of "+num+" are "+fact+".<br/>The sum is "+sum+".<br/>"+sum+" > "+num;
+  }
+  }}
+</script>    
+    </body>
+</html>
