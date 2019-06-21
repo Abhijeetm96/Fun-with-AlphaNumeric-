@@ -1,203 +1,216 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Page Title</title>
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-     <link rel="stylesheet" href="style.css">
-     <script src="app.js"></script>
+
+<head>
+    <title>Fun with Numbers and Alphabet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-    </head>
-    <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-         <div class="navbar-header">
-             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>    
-              </button>
-            <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-file" area-hidden="true"></span> Working With Number&Text</a>
-         </div>
-         
-         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-             <div class="nav navbar-nav">
-                <li><a href="#ber"><span class="glyphicon glyphicon-sound-5-1"></span> Working With Number</a></li>
-                <li><a href="#text"><span class="glyphicon glyphicon-font"></span> Working With Text</a></li>
-             </div>
-             <ul class="nav navbar-nav navbar-right">
-             <li><a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-book"></span> About</a></li>
-                <li><a href="#footer"><span class="glyphicon glyphicon-earphone"></span> Contact Us</a></li>
-               <li><a href="https://github.com/Abhijeetm96"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
-                <li><a href="mailto:abhijeetm96kumar@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Email Us</a></li>
-             </ul>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-file" area-hidden="true"></span> Working With Number&Text</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="nav navbar-nav">
+                    <li><a href="#ber"><span class="glyphicon glyphicon-sound-5-1"></span> Working With Number</a></li>
+                    <li><a href="#text"><span class="glyphicon glyphicon-font"></span> Working With Text</a></li>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-book"></span> About</a></li>
+                    <li><a href="#footer"><span class="glyphicon glyphicon-earphone"></span> Contact Us</a></li>
+                    <li><a href="https://github.com/Abhijeetm96"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+                    <li><a href="mailto:abhijeetm96kumar@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Email Us</a></li>
+                </ul>
             </div>
         </div>
     </nav>
-   <div class="head">
-    <div id="ber"><h2 align="center"><u><b><span class="glyphicon glyphicon-sound-5-1"></span> Working With Number!</b></u></h2></div>
-    <div class="body" id="factor">
-     <h1 align="center">Factorize</h1>
-       <h4 align="center">
-            <input type="number" id="num" placeholder="Enter A Value" required/>
- <button type="submit" class="submit" onclick="makerFactor()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
-</h4>
-   <div id="demo">The answer goes here!
-                </div>
-                </div>
-                 <div class="body" id="pn">
-     <h1 align="center">Prime Number Checker</h1>
-       <h4 align="center">
-            <input type="number" id="prime" placeholder="Enter A Value" required/>
- <button type="submit" class="submit" onclick="makerPrime()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
-</h4>
-   <div id="demo1">The answer goes here!
-                </div>
-                </div>  
-               <div class="body" align="center" id="time">
-               <h1>Time Converter</h1>
-            Day : <input type="number" id="day" placeholder="Enter A Value"/><br />Hour : <input type="number" id="hour" placeholder="Enter A Value"/><br />Minute : <input type="number" id="min" placeholder="Enter A Value"/><br />Second : <input type="number" id="sec" placeholder="Enter A Value"/><br />
-            Convert To :  <SELECT id="to"> 
-<option value="1" selected> Day </option>
-<option value="2"> Hour</option>
-<option value="3"> Minute</option>
-<option value="4">Second</option>
-</select>  <br />
-            <button type="submit" id="submit" class="submit" onclick="makerConverterTime()"><span class="glyphicon glyphicon-ok"></span> Submit</button>    <a type="button" data-toggle="modal" data-target="#myModal">See Term Of Time?</a>
-        <div id="demo3">The answer goes here!</div>
-               <div id="demo4">The answer goes here!</div>
-                      <div id="demo5">The answer goes here!</div>
-                             <div id="demo6">The answer goes here!</div>
-         </div>
-          <div class="body" id="defi">
-     <h1 align="center">Deficient number</h1>
-       <h4 align="center">
-            <input type="number" id="deficient" placeholder="Enter A Value" required/>
- <button  type="submit" class="submit" onclick="makerDeficient()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
-</h4>
-   <div id="demo2">The answer goes here!
-                </div><br/>
-                </div>
-                 <div class="body" id="abun">
-     <h1 align="center">Abundant number</h1>
-       <h4 align="center">
-            <input type="number" id="Abundant" placeholder="Enter A Value" required/>
- <button  type="submit" class="submit" onclick="makerAbundant()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
-</h4>
-   <div id="demo8">The answer goes here!
-                </div><br/>
-                </div>
-                 <div class="body">
-     <h1 align="center">Perfect Number</h1>
-       <h4 align="center">
-            <input type="number" id="perfect" placeholder="Enter A Value" required/>
- <button  type="submit" class="submit" onclick="makerPerfect()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
-</h4>
-   <div id="demo16">The answer goes here!
-                </div><br/>
-                </div>
-                  <div class="body" id="auto">
-              <h1 align="center">Automorphic number</h1>
-         <h2 align="center">Checker</h2> 
-       <h4 align="center">
-            <input type="number" id="autocheck" placeholder="Enter A Value" required/>
- <button  type="submit" class="submit" onclick="makerAutoCheck()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
-</h4>
-   <div id="demo11">The answer goes here!
-                </div><br/>
-                         <div id="body">
-          <h2 align="center">In Range</h2>
-       <h4 align="center">
-            From : <input type="number" id="autofrom" placeholder="Enter A Value" required/> <br/>To : 
-            <input type="number" id="autoto" placeholder="Enter A Value" required/><br/>
- <button  type="submit" class="submit" onclick="makerAutoRange()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
-</h4>
-   <div id="demo12">The answer goes here!
-                </div><br/>
-                </div>
-                </div>
-                <div class="body" id="ip">
-     <h1 align="center">Is That An IP Address???</h1>
-       <h4 align="center">
-            <input type="number" id="ipone" placeholder="Enter A Value"  required/> •
-            <input type="number" id="iptwo" placeholder="Enter A Value" required/> •
-            <input type="number" id="ipthree" placeholder="Enter A Value" required/> •
-             <input type="number" id="ipfour" placeholder="Enter A Value" required/>
- <button  type="submit" class="submit" onclick="makerIP()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
-</h4>
-   <div id="demo15">The answer goes here!
-                </div></div>
-                 <div class="body">
-     <h1 align="center">A Snail's Journey</h1>
-       <h4 align="center">Tree's height : 
-            <input type="number" id="snailh" placeholder="Enter A Value" required/><br />Ascending per day : 
-                <input type="number" id="snaila" placeholder="Enter A Value" required/><br/>Descending per day : 
-                  <input type="number" id="snailb" placeholder="Enter A Value" required/>  <br />
- <button  type="submit" class="submit" onclick="makerSnail()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
-</h4>
-   <div id="demo17">The answer goes here!
-                </div><br/>
-                </div>
-              <div class="body" id="pro">
-                <h1 align="center">Pronic Number</h4>
-       <h4 align="center">
-            <input style="display:none;"type="number" id="pronic" placeholder="Enter A Value" required/>
- <button style="display:none;"type="submit" class="submit" onclick="makerPronic()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
-</h4>
-   <div id="demo7">In Develop. Coming soon!!!
-                </div>
-                </div>
-                <div class="container">
-      <div id="myModal" class="modal" style="vertical-align:middle;">
-        <div class="model-dialog">
-          <div class="modal-content">
-              <button data-dismiss="modal" class="submit" align="right">X</button>
-            <div class="modal-header" align="center"><b>Term Of Time</b></div>
-            <div class="modal-content" align="center">1 year = 12 months,365 days</br>1 month = 30 days<br/>1 days = 24 hours<br/>1 hour = 60 minutes<br/>1 minute = 60 seconds</div>
-            <div class="modal-footer" id="copyright"></div>
+    <div class="head">
+        <div id="ber">
+            <h2 align="center"><u><b><span class="glyphicon glyphicon-sound-5-1"></span> Working With Number!</b></u></h2>
         </div>
-        </div>
-      </div>
-    </div>
-      <div class="container">
-      <div id="myModal2" class="modal">
-        <div class="model-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-             <button data-dismiss="modal" class="submit">X</button>
-              <h3 class="modal-title" style="text-align:center;">About Me!!!</h3>
+        <div class="body" id="factor">
+            <h1 align="center">Factorize</h1>
+            <h4 align="center">
+                <input type="number" id="num" placeholder="Enter A Value" required />
+                <button type="submit" class="submit" onclick="makerFactor()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+            </h4>
+            <div id="demo">The answer goes here!
             </div>
-            <div class="modal-body">Hello My name is <b>Abhijeet Kumar</b>. I have completed my bachelors in information Science and Engineering . I am a web developer with expertise in Web technologies  </div>
-            <div class="modal-footer" style="text-align:center;"><a href="https://github.com/Abhijeetm96"><span class="glyphicon glyphicon-user"></span> See My Profile?</a><br /><h4 id="copyright"></h4></div>
-          </div>
         </div>
-      </div>
-    </div>
-        <div id="text"><h2 align="center"><u><b><span class="glyphicon glyphicon-font"></span> Working With Text!</b></u></h2></div>
-        <div class="body" id="body">
-     <h1 align="center">Removing Space</h1>
-       <h4 align="center">
-            <input type="text" id="remove" placeholder="Enter A Text" required/>
- <button  type="submit" class="submit" onclick="makerRemoveSpace()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
-</h4>
-   <div id="demo9">The answer goes here!
-                </div><br/>
-                </div>
-                  <div class="body" id="body">
-                 <h1 align="center">Sort A String</h1>
-       <h4 align="center">
-            <input type="text" id="sort" placeholder="Enter A Text" required/>
- <button  type="submit" class="submit" onclick="makerSort()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
-</h4>
-   <div id="demo10">The answer goes here!
+        <div class="body" id="pn">
+            <h1 align="center">Prime Number Checker</h1>
+            <h4 align="center">
+                <input type="number" id="prime" placeholder="Enter A Value" required />
+                <button type="submit" class="submit" onclick="makerPrime()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+            </h4>
+            <div id="demo1">The answer goes here!
+            </div>
+        </div>
+        <div class="body" align="center" id="time">
+            <h1>Time Converter</h1>
+            Day : <input type="number" id="day" placeholder="Enter A Value" /><br />Hour : <input type="number" id="hour" placeholder="Enter A Value" /><br />Minute : <input type="number" id="min" placeholder="Enter A Value" /><br />Second : <input type="number" id="sec" placeholder="Enter A Value" /><br />
+            Convert To : <SELECT id="to"> 
+                <option value="1" selected> Day </option>
+                <option value="2"> Hour</option>
+                <option value="3"> Minute</option>
+                <option value="4">Second</option>
+            </select>  <br />
+            <button type="submit" id="submit" class="submit" onclick="makerConverterTime()"><span class="glyphicon glyphicon-ok"></span> Submit</button> <a type="button" data-toggle="modal" data-target="#myModal">See Term Of Time?</a>
+            <div id="demo3">The answer goes here!</div>
+            <div id="demo4">The answer goes here!</div>
+            <div id="demo5">The answer goes here!</div>
+            <div id="demo6">The answer goes here!</div>
+        </div>
+        <div class="body" id="defi">
+            <h1 align="center">Deficient number</h1>
+            <h4 align="center">
+                <input type="number" id="deficient" placeholder="Enter A Value" required />
+                <button type="submit" class="submit" onclick="makerDeficient()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+            </h4>
+            <div id="demo2">The answer goes here!
+            </div><br />
+        </div>
+        <div class="body" id="abun">
+            <h1 align="center">Abundant number</h1>
+            <h4 align="center">
+                <input type="number" id="Abundant" placeholder="Enter A Value" required />
+                <button type="submit" class="submit" onclick="makerAbundant()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+            </h4>
+            <div id="demo8">The answer goes here!
+            </div><br />
+        </div>
+        <div class="body">
+            <h1 align="center">Perfect Number</h1>
+            <h4 align="center">
+                <input type="number" id="perfect" placeholder="Enter A Value" required />
+                <button type="submit" class="submit" onclick="makerPerfect()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+            </h4>
+            <div id="demo16">The answer goes here!
+            </div><br />
+        </div>
+        <div class="body" id="auto">
+            <h1 align="center">Automorphic number</h1>
+            <h2 align="center">Checker</h2>
+            <h4 align="center">
+                <input type="number" id="autocheck" placeholder="Enter A Value" required />
+                <button type="submit" class="submit" onclick="makerAutoCheck()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+            </h4>
+            <div id="demo11">The answer goes here!
+            </div><br />
+            <div id="body">
+                <h2 align="center">In Range</h2>
+                <h4 align="center">
+                    From : <input type="number" id="autofrom" placeholder="Enter A Value" required /> <br />To :
+                    <input type="number" id="autoto" placeholder="Enter A Value" required /><br />
+                    <button type="submit" class="submit" onclick="makerAutoRange()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+                </h4>
+                <div id="demo12">The answer goes here!
                 </div><br />
+            </div>
+        </div>
+        <div class="body" id="ip">
+            <h1 align="center">Is That An IP Address???</h1>
+            <h4 align="center">
+                <input type="number" id="ipone" placeholder="Enter A Value" required /> •
+                <input type="number" id="iptwo" placeholder="Enter A Value" required /> •
+                <input type="number" id="ipthree" placeholder="Enter A Value" required /> •
+                <input type="number" id="ipfour" placeholder="Enter A Value" required />
+                <button type="submit" class="submit" onclick="makerIP()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+            </h4>
+            <div id="demo15">The answer goes here!
+            </div>
+        </div>
+        <div class="body">
+            <h1 align="center">A Snail's Journey</h1>
+            <h4 align="center">Tree's height :
+                <input type="number" id="snailh" placeholder="Enter A Value" required /><br />Ascending per day :
+                <input type="number" id="snaila" placeholder="Enter A Value" required /><br />Descending per day :
+                <input type="number" id="snailb" placeholder="Enter A Value" required /> <br />
+                <button type="submit" class="submit" onclick="makerSnail()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+            </h4>
+            <div id="demo17">The answer goes here!
+            </div><br />
+        </div>
+        <div class="body" id="pro">
+            <h1 align="center">Pronic Number</h4>
+                <h4 align="center">
+                    <input style="display:none;" type="number" id="pronic" placeholder="Enter A Value" required />
+                    <button style="display:none;" type="submit" class="submit" onclick="makerPronic()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+                </h4>
+                <div id="demo7">In Develop. Coming soon!!!
                 </div>
+        </div>
+        <div class="container">
+            <div id="myModal" class="modal" style="vertical-align:middle;">
+                <div class="model-dialog">
+                    <div class="modal-content">
+                        <button data-dismiss="modal" class="submit" align="right">X</button>
+                        <div class="modal-header" align="center"><b>Term Of Time</b></div>
+                        <div class="modal-content" align="center">1 year = 12 months,365 days</br>1 month = 30 days<br />1 days = 24 hours<br />1 hour = 60 minutes<br />1 minute = 60 seconds</div>
+                        <div class="modal-footer" id="copyright"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="myModal2" class="modal">
+                <div class="model-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button data-dismiss="modal" class="submit">X</button>
+                            <h3 class="modal-title" style="text-align:center;">About Me!!!</h3>
+                        </div>
+                        <div class="modal-body">Hello My name is <b>Abhijeet Kumar</b>. I have completed my bachelors in information Science and Engineering . I am a web developer with expertise in Web technologies </div>
+                        <div class="modal-footer" style="text-align:center;"><a href="https://github.com/Abhijeetm96"><span class="glyphicon glyphicon-user"></span> See My Profile?</a><br />
+                            <h4 id="copyright"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="text">
+            <h2 align="center"><u><b><span class="glyphicon glyphicon-font"></span> Working With Text!</b></u></h2>
+        </div>
+        <div class="body" id="body">
+            <h1 align="center">Removing Space</h1>
+            <h4 align="center">
+                <input type="text" id="remove" placeholder="Enter A Text" required />
+                <button type="submit" class="submit" onclick="makerRemoveSpace()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+            </h4>
+            <div id="demo9">The answer goes here!
+            </div><br />
+        </div>
+        <div class="body" id="body">
+            <h1 align="center">Sort A String</h1>
+            <h4 align="center">
+                <input type="text" id="sort" placeholder="Enter A Text" required />
+                <button type="submit" class="submit" onclick="makerSort()"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+            </h4>
+            <div id="demo10">The answer goes here!
+            </div><br />
+        </div>
     </div>
-                <h4 align="center" id="copy"></h4>
-                <footer id="footer" align="center"><h3>Contact Us</h3><br /><div ><a href="https://github.com/Abhijeetm96"><button id="profile"><span class="glyphicon glyphicon-user"></span> My Profile</button></a></div><br /><div><a href="mailto:abhijeetm96kumar@gmail.com"><button id="email"><span class="glyphicon glyphicon-envelope"></span> Email Us</button></a></div></footer>
-    
-    </body>
+    <h4 align="center" id="copy"></h4>
+    <footer id="footer" align="center">
+        <h3>Contact Us</h3><br />
+        <div><a href="https://github.com/Abhijeetm96"><button id="profile"><span class="glyphicon glyphicon-user"></span> My Profile</button></a></div><br />
+        <div><a href="mailto:abhijeetm96kumar@gmail.com"><button id="email"><span class="glyphicon glyphicon-envelope"></span> Email Us</button></a></div>
+    </footer>
+
+</body>
+
 </html>
