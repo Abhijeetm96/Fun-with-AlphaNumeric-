@@ -1,0 +1,87 @@
+
+#snailh,#snaila,#snailb {
+width:140px;
+    height:30px;
+    font-size:15px;
+}
+#ipone,#iptwo,#ipthree,#ipfour {
+width:50px;
+    height:30px;
+    font-size:15px;
+}
+.submit {
+    background-color: #3fb6b2;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+    align: center;
+    text-align:center;
+} 
+#demo,#demo1,#demo2,#demo3,#demo4,#demo5,#demo6,#demo7,#demo8,#demo9,#demo10,#demo11,#demo12,#demo13,#demo14,#demo15,#demo16,#demo17 {
+    background-color: #efefef;
+        align: center;
+        text-align:center;
+        font-weight:bold;  
+        overflow:scroll;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px; 
+    font-size:20px;
+}
+.body {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.head {
+    padding:10px;
+}
+body {
+    background-color: #efefef;
+    margin: 0;
+    padding-top:50px;
+}
+#num,#pronic,#deficient,#prime,#day,#hour,#min,#sec,#Abundant,#remove,#sort,#autocheck,#autofrom,#autoto,#perfect {
+width:150px;
+    height:30px;
+    font-size:15px;
+}
+.jumbotron {
+    color: #2c3e50;
+    background-color: #ecf0f1;
+}
+
+.navbar-inverse {
+    background-color: #2c3e50;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+#profile,#email {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+    width:80%;
+}
+#footer {
+    background-color:black;
+    color:white;
+    padding: 12px 20px;
+}
